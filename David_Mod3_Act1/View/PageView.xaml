@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="David_Mod3_Act1.View.PageView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Student ID"/>
+            <Entry Text="{Binding StudentIDEntry}"/>
+            <Label Text="Name"/>
+            <Entry Text="{Binding NameEntry}"/>
+            <Label Text="Course Code"/>
+            <Entry Text="{Binding CourseCodeEntry}"/>
+            <Label Text="Course Title"/>
+            <Entry Text="{Binding CourseTitleEntry}"/>
+            <Label Text="Number of Units"/>
+            <Entry Text="{Binding UnitsEntry}"/>
+            <Label Text="Date of Attendance"/>
+            <Entry Text="{Binding AttendanceEntry}"/>
+
+            <Button Command="{Binding SubmitEntry}" Text="Submit"/>
+            <Button Command="{Binding ClearEntry}" Text="Clear"/>
+            
+            <Label Text="{Binding StudentIDDisplay}"/>
+            <Label Text="{Binding NameDisplay}"/>
+            <Label Text="{Binding CourseCodeDisplay}"/>
+            <Label Text="{Binding CourseTitleDisplay}"/>
+            <Label Text="{Binding UnitsDisplay}"/>
+            <Label Text="{Binding AttendanceDisplay}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
